@@ -1,0 +1,120 @@
+  /* Modo Claro (por defecto) */
+  body {
+      background-color: #f8f9fa;
+      color: #333;
+      font-family: 'Roboto', sans-serif;
+  }
+
+  header {
+      background-color: #343a40;
+      color: white;
+  }
+
+  /* Modo Oscuro */
+  body.dark-mode {
+      background-color: #121212;
+      color: #eaeaea;
+  }
+
+
+  header.dark-mode {
+      background-color: #1c1c1c;
+  }
+
+  /* Aseguramos que el mapa también se adapte al modo oscuro */
+  #map.dark-mode {
+      filter: brightness(0.8);
+      /* Oscurecer el mapa para el modo oscuro */
+  }
+
+  /* Cambiar el color de los botones para que se adapten al modo oscuro */
+  button.dark-mode {
+      background-color: #444;
+      color: #fff;
+  }
+
+  /* Estilos para las cards en modo claro (opcional si ya lo tienes con Bootstrap) */
+  .card {
+      background-color: #ffffff;
+      color: #333;
+      border: 1px solid #ddd;
+  }
+
+  /* Estilos para las cards en modo oscuro */
+  body.dark-mode .card {
+      background-color: #1f1f1f;
+      color: #eaeaea;
+      border: 1px solid #333;
+  }
+
+  /* Opcional: si usas card-header, card-footer */
+  body.dark-mode .card-header,
+  body.dark-mode .card-footer {
+      background-color: #2a2a2a;
+      border-color: #444;
+      color: #eaeaea;
+  }
+
+  /* Para enlaces dentro de las cards en modo oscuro */
+  body.dark-mode .card a {
+      color: #9ecbff;
+  }
+
+  /* Estilo por defecto (modo claro) */
+  .custom-footer {
+      background-color: #343a40;
+      /* Fondo oscuro */
+      color: white;
+      /* Texto blanco */
+  }
+
+  .custom-footer a {
+      color: white;
+      /* Enlaces blancos en modo claro */
+      transition: color 0.3s ease;
+      /* Transición suave para los enlaces */
+  }
+
+  /* Estilo para el footer en modo oscuro */
+  body.dark-mode .custom-footer {
+      background-color: #ffffff;
+      /* Fondo blanco en modo oscuro */
+      color: #000000;
+      /* Texto negro en modo oscuro */
+  }
+
+  body.dark-mode .custom-footer a {
+      color: #000000;
+      /* Enlaces negros en modo oscuro */
+  }
+
+  /* Efecto hover para los enlaces */
+  .custom-footer a:hover {
+      color: #f1c40f;
+      /* Un color brillante (amarillo) en hover en modo claro */
+  }
+
+  /* Efecto hover en modo oscuro */
+  body.dark-mode .custom-footer a:hover {
+      color: #f39c12;
+      /* Un amarillo más oscuro para hover en modo oscuro */
+  }
+
+  /* Estilo para la línea divisoria del footer */
+  body.dark-mode .custom-footer hr {
+      border-color: #999;
+      /* Línea gris más suave en modo oscuro */
+  }
+
+  /* Transición suave para el cambio entre modos */
+  .custom-footer {
+      transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+
+
+
+  body.dark-mode .btn {
+      background-color: #444;
+      color: white;
+  }

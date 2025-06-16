@@ -1,0 +1,352 @@
+/* Estilos personalizados para el diseño de la página */
+
+/* Estilos para los Modals */
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Fondo oscuro */
+    transition: opacity 0.3s ease;
+    /* Transición suave */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    /* Tamaño flexible */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra */
+    animation: fadeIn 0.3s ease-out;
+    /* Animación de entrada */
+}
+
+.close {
+    color: #aaa;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Animación de Fade In para el Modal */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Imágenes redondeadas */
+img.img-fluid {
+    border-radius: 8px;
+}
+
+
+/* Para que el navbar no tape contenido al hacer scroll */
+body {
+    padding-top: 70px;
+}
+
+/* Secciones */
+section {
+    padding: 60px 0;
+}
+
+#coches {
+    background-color: #f8f9fa;
+}
+
+#motos {
+    background-color: #e9ecef;
+}
+
+
+/* Estilos para el Navbar */
+.navbar {
+    background: linear-gradient(45deg, #1f2a44, #3b4a77);
+    /* Degradado de azul oscuro */
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
+    transition: background 0.3s ease;
+}
+
+.navbar:hover {
+    background: linear-gradient(45deg, #243b56, #4f6a99);
+    /* Degradado más oscuro al pasar el ratón */
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #f39c12;
+    /* Color dorado cuando se pasa el ratón */
+}
+
+.navbar-toggler-icon {
+    background-color: #f39c12;
+    /* Icono del menú en dorado */
+}
+
+.nav-link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* Transición suave */
+}
+
+.nav-link:hover {
+    color: #f39c12;
+    /* Dorado al pasar el ratón */
+    transform: scale(1.1);
+    /* Efecto de escala para que el enlace se agrande un poco */
+}
+
+/* Estilos para el botón de hamburguesa */
+.navbar-toggler {
+    border-color: #f39c12;
+    /* Borde dorado para el botón */
+}
+
+/* Ajustes para que el navbar se vea bien en pantallas pequeñas */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 10px 0;
+        /* Espaciado entre los elementos del menú */
+    }
+}
+
+/* Estilo para el carrusel */
+.carousel-inner img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+footer h5 {
+    margin-bottom: 15px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .list-unstyled {
+    padding-left: 0;
+}
+
+footer hr {
+    border-color: #fff;
+}
+
+/* Estilo para el Título en la Página Principal */
+.main-title h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 700;
+    /* Usamos un peso fuerte para la fuente */
+    font-size: 5rem;
+    /* Hacemos el título mucho más grande */
+    color: #343a40;
+    /* Color oscuro, puedes cambiarlo si lo prefieres */
+    text-transform: uppercase;
+    /* Título en mayúsculas */
+    letter-spacing: 5px;
+    /* Espaciado entre letras para hacerlo más impactante */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    /* Sombra sutil para darle profundidad */
+    margin-bottom: 20px;
+    font-style: normal;
+}
+
+.main-title p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: #6c757d;
+    text-transform: capitalize;
+    /* Un poco de estilo, pero sin ser tan agresivo */
+}
+
+/* Sombra en el Título */
+.main-title {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 60px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Establecer un tamaño fijo para las imágenes */
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Establecer una altura fija para las cards y hacerlas iguales */
+.card {
+    height: 100%;
+}
+
+/* Asegurar que todos los títulos sean consistentes */
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Asegurar que los botones estén alineados y consistentes */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Ajustar el tamaño de las cards en los diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Estilo personalizado para el texto debajo del título */
+/* Estilo para el texto debajo de los títulos de los cards */
+.card .card-body .card-text {
+    font-family: 'Roboto', sans-serif;
+    /* Cambiar la fuente a Roboto */
+    font-size: 0.8rem;
+    /* Reducir el tamaño de la fuente */
+    color: #6c757d;
+    /* Color gris para hacer el texto menos prominente */
+    line-height: 1.5;
+    /* Aumentar el espacio entre líneas para mejor legibilidad */
+}
+
+/* Estilo para las imágenes de la galería */
+.gallery-img {
+    width: 120%;
+    height: 200px;
+    /* Ajusta este valor según el tamaño que prefieras */
+    object-fit: cover;
+    /* Esto asegura que las imágenes no se distorsionen */
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #000;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    /* Asegura que el botón esté encima de otros elementos */
+    opacity: 0.7;
+}
+
+.close-btn:hover {
+    opacity: 1;
+    color: #ff0000;
+    /* Puedes cambiar el color al pasar el ratón por encima */
+}
+
+#coches-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#coches-list .col-md-4 {
+    flex: 1 1 30%;
+    max-width: 30%;
+    margin-bottom: 20px;
+}
+
+.detalles-coche {
+    display: none;
+}
+
+#coches-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Si deseas personalizar el botón aún más */
+.btn-link {
+    color: #333;
+    /* Color del icono (gris oscuro) */
+    background-color: transparent;
+    /* Fondo transparente */
+    border: none;
+    /* Sin borde */
+}
+
+.btn-link:hover {
+    color: #ff5733;
+    /* Cambiar el color cuando se pasa el ratón */
+}
+
+#financiamiento {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#financiamiento h2 {
+    color: #333;
+    font-weight: bold;
+}
+
+#financiamiento form {
+    max-width: 400px;
+    margin: auto;
+}
+
+#financiamiento .btn {
+    width: 100%;
+}
